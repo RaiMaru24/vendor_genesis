@@ -177,6 +177,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/genesis/config/permissions/privapp-permissions-settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-settings.xml
+
 # rsync
 PRODUCT_PACKAGES += \
     rsync
