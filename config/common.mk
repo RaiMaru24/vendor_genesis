@@ -254,6 +254,9 @@ include vendor/genesis/config/fonts.mk
 # Google apps and services
 $(call inherit-product, vendor/gms/products/gms.mk)
 
+# Microsoft
+$(call inherit-product, vendor/microsoft/packages.mk)
+
 include vendor/genesis/config/version.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
